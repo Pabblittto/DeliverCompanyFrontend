@@ -2,13 +2,13 @@ import { Contract } from './Contract';
 import { Department } from './Department';
 
 export class Worker{
-    Id:number;
-    Name:string;
-    Surname:string;
+    id:number;
+    name:string;
+    surname:string;
     
 
     //complex types
-    Contracts:Contract[];
+    contracts:Contract[];
     position:Position;
     department:Department;
 }

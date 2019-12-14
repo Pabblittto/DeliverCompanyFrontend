@@ -15,7 +15,7 @@ export class ListElementComponent implements OnInit {
 
   @Input() Id:string|number;// this is not displayed
   @Input() FirstData: string|number="";
-  @Input() DecondData: string|number="";
+  @Input() SecondData: string|number="";
   @Input() ThirdData: string|number="";
   @Input() FourthData: string|number="";
 
@@ -24,5 +24,17 @@ export class ListElementComponent implements OnInit {
 
   @Input() DeleteUrl:string // URL FOR DELETING ELEMENT ON SERVER
   
+
+  editBtnClick(){
+
+  }
+
+  detailsBtnClick(){
+    
+  }
+
+  deleteBtnClick(){
+
+  }
 
 }

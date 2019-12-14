@@ -1,5 +1,5 @@
 {
-    "PageElements":7,
+    "PageElements":1000,
     "BaseServerUrl":"https://localhost:44327",
     "Cars":"api/cars",
     "Chambers":"api/chambers",

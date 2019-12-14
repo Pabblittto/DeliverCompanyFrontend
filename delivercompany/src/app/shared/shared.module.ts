@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { ConnectionService } from './../services/connection/connection.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListElementComponent } from './list-element/list-element.component';
@@ -10,6 +12,7 @@ import { PaginationBarComponent } from './pagination-bar/pagination-bar.componen
   imports: [
     CommonModule
   ],
-  exports:[ListElementComponent]
+  exports:[ListElementComponent],
+  providers:[]
 })
 export class SharedModule { }

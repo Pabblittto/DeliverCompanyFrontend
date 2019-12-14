@@ -1,9 +1,9 @@
 import { Chamber } from './Chamber';
 
 export class ChamberType{
-    TypeName:string;
-    Height:number;
-    Width:number;
+    typeName:string;
+    height:number;
+    width:number;
 
     //complex types
     chambers:Chamber[];

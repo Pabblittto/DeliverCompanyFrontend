@@ -2,8 +2,8 @@ import { ParcelLocker } from './ParcelLocker';
 import { Region } from './Region';
 
 export class Street{
-    Id:number;
-    StreetName:string;
+    id:number;
+    streetName:string;
 
 
     //complex types

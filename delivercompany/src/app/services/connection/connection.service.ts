@@ -23,7 +23,7 @@ export class ConnectionService {
     else
       tmp=url+'/'+PK;
     
-    let finalUrl=`${Settings.BaseServerUrl}+'/'+${tmp}`; 
+    let finalUrl=`${Settings.BaseServerUrl}/${tmp}`; 
 
     return this.http.get<T>(finalUrl);
   }
@@ -36,7 +36,7 @@ export class ConnectionService {
     else  
       tmp=url+ `/am=${amount}/pg=${page}`;
 
-      let finalUrl=`${Settings.BaseServerUrl}+'/'+${tmp}`; 
+      let finalUrl=`${Settings.BaseServerUrl}/${tmp}`; 
 
     return this.http.get<T[]>(finalUrl);
   }
@@ -49,7 +49,7 @@ export class ConnectionService {
     else`
       tmp=url+`/${PK}`
 
-      let finalUrl=`${Settings.BaseServerUrl}+'/'+${tmp}`; 
+      let finalUrl=`${Settings.BaseServerUrl}/${tmp}`; 
 
       return this.http.patch<any>(finalUrl,obiect)
   }
@@ -61,7 +61,7 @@ export class ConnectionService {
     else
       tmp=url+`/${PK}`;
 
-      let finalUrl=`${Settings.BaseServerUrl}+'/'+${tmp}`; 
+      let finalUrl=`${Settings.BaseServerUrl}/${tmp}`; 
 
     return this.http.delete<any>(finalUrl);
   }
@@ -73,7 +73,7 @@ export class ConnectionService {
     else
       tmp=url+`/${PK}`;
     
-      let finalUrl=`${Settings.BaseServerUrl}+'/'+${tmp}`; 
+      let finalUrl=`${Settings.BaseServerUrl}/${tmp}`; 
 
     return this.http.post<string[]>(finalUrl,object);
   }

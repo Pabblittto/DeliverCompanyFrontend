@@ -3,6 +3,7 @@ import { Department } from './../../Models/Department';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Settings from '../../Settings.json';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-list',
@@ -29,6 +30,10 @@ export class ListComponent implements OnInit {
   page:number;
   DepartmentList:Department[];
   numberOfPages:number;// number of all pages
+
+  EditUrl:string="departments/edit/";
+  DetailsUrl:string="departments/details/";
+  DeleteUrl:string=Settings.Departments;
   
 
   WrongParamUrl():void{
@@ -37,11 +42,21 @@ export class ListComponent implements OnInit {
 
   UpdatePaginationButtons():void{
     // podświetlenie konkretnego przycisku + edytowanie jego ilośći
+    // kurwa jebać
   }
 
 
   UpdateDepartmentList(page:number):void{// when user change page
-    this.connection.getListOfElements<Department>(Settings.Departments,this.page,Settings.PageElements)
+    this.connection.getListOfElements<Department>(Settings.Departments,this.page,Settings.PageElements).subscribe(
+      res=>{
+        this.DepartmentList=[...res]
+        console.log(this.DepartmentList);
+        
+      },
+      (err:HttpErrorResponse)=>{
+        console.log(err.status);
+      }
+    )
   }
 
 }

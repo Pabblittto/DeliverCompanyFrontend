@@ -3,13 +3,13 @@ import { Department } from './Department';
 import { Pack } from './Pack';
 
 export class Order{
-    Id:number;
-    State:string;
+    id:number;
+    state:string;
 
     //complex types
     pack:Pack;
     department:Department;
     sender:Person;
-    Receiver:Person;
+    receiver:Person;
     
 }

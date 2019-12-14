@@ -1,8 +1,8 @@
 
 export class Contract{
-    Id:number;
-    FilePath:string;
-    Date:Date;
+    id:number;
+    filePath:string;
+    date:Date;
 
     //complex types
     worker:Worker;

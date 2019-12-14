@@ -1,8 +1,8 @@
 
 export class Position{
-    Name:string;
-    MinSalary:number;
-    MaxSalary:number;
+    name:string;
+    minSalary:number;
+    maxSalary:number;
 
     //complex types
     workers:Worker[];

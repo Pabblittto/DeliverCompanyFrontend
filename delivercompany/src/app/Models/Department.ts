@@ -5,19 +5,19 @@ import { Warehouse } from './Warehouse';
 import { Car } from './Car';
 
 export class Department{
-    Id:number;
-    Name:string;
-    BankAccountNo:number;
-    Street:string;
-    BuildingNo:number;
-    OfficeTelNo:string;
-    ManagerTelNo:string;
+    id:number;
+    name:string;
+    bankAccountNo:number;
+    street:string;
+    buildingNo:number;
+    officeTelNo:string;
+    managerTelNo:string;
 
     //complex types
-    Cars:Car[];
-    Warehouses:Warehouse[];
-    Invoices:Invoice[];
-    Orders:Order[];
-    Regions:Region[];
-    Workers:Worker[];
+    cars:Car[];
+    warehouses:Warehouse[];
+    invoices:Invoice[];
+    orders:Order[];
+    regions:Region[];
+    workers:Worker[];
 }

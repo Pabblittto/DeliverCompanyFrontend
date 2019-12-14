@@ -3,7 +3,7 @@ import { Chamber } from './Chamber';
 
 
 export class ParcelLocker{
-    Id:number;
+    id:number;
     
 
     //complex types

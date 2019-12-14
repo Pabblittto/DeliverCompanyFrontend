@@ -1,6 +1,18 @@
-<div><!-- container for list elements -->
-    
-    <app-list-element *ngFor="let department of DepartmentList"  ></app-list-element>
+<div class="row w-100">
+
+</div>
+<div class="w-100"><!-- container for list elements -->
+
+    <app-list-element *ngFor="let department of DepartmentList" 
+    [Id]="department.id" 
+    [FirstData]="department.name" 
+    [SecondData]="department.street" 
+    [ThirdData]="department.buildingNo"
+    [FourthData]="department.officeTelNo"
+    [EditUrl]="EditUrl"
+    [DetailsUrl]="DetailsUrl"
+    [DeleteUrl]="DeleteUrl"
+    ></app-list-element>
 </div>
 <div>
 

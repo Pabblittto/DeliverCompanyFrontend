@@ -2,9 +2,9 @@ import { Order } from './Order';
 import { PackType } from './PackType';
 
 export class Pack{
-    Id:number;
-    Weight:number;
-    Height:number;
+    id:number;
+    weight:number;
+    height:number;
 
 
     //complex object

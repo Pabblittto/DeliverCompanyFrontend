@@ -1,10 +1,10 @@
 import { Pack } from './Pack';
 
 export class PackType{
-    Name:string;//PK
-    MinWeight:number;
-    MaxWeight:number;
-    Price:number;
+    name:string;//PK
+    minWeight:number;
+    maxWeight:number;
+    price:number;
     
     // complex types
     packs:Pack[];

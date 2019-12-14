@@ -1,3 +1,31 @@
-<div class="defaultListElement row">
-
+<div class="defaultListElement row shadow shadow-sm m-1">
+    <div class="col-auto text-center">
+        <p>
+            {{FirstData}}  
+        </p>
+    </div>
+    <div class="col-auto text-center">
+        <p>
+            {{SecondData}}
+        </p>
+    </div>
+    <div class="col-auto text-center">
+        <p>
+            {{ThirdData}}            
+        </p>
+    </div>
+    <div class="col-auto text-center">
+        <p>
+            {{FourthData}}            
+        </p>
+    </div>
+    <div class="col-1">
+        <button class="btn btn-dark" (click)="editBtnClick()">Edit</button>
+    </div>
+    <div class="col-1">
+        <button class="btn btn-dark" (click)="detailsBtnClick()">Details</button>
+    </div>
+    <div class="col-1">
+        <button class="btn btn-dark" (click)="deleteBtnClick()">Delete</button>
+    </div>
 </div>

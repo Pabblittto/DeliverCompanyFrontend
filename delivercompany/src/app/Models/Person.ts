@@ -1,16 +1,16 @@
 import { Order } from './Order';
 
 export class Person{
-    Id:number;
-    Name:string;
-    Surname:string;
-    City:string;
-    Street:string;
-    BuildingNo:number;
-    TelNo:string;
+    id:number;
+    name:string;
+    surname:string;
+    city:string;
+    street:string;
+    buildingNo:number;
+    telNo:string;
 
     //complex types
-    BeeingSender:Order[];// jakich paczej jest nadawcą
-    BeeingReceiver:Order[];// jakich paczek jest odbiorca
+    beeingSender:Order[];// jakich paczej jest nadawcą
+    beeingReceiver:Order[];// jakich paczek jest odbiorca
 
 }

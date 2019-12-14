@@ -1,12 +1,12 @@
 import { Department } from './Department';
 
 export class Car{
-    RegistrationNumber:number;//PK
-    VIN:number;
-    Mark:string;
-    Model:string;
-    PolicyNumber:number;
+    registrationNumber:number;//PK
+    vIN:number;
+    mark:string;
+    model:string;
+    policyNumber:number;
 
     // complex types
-    Department:Department;
+    department:Department;
 }
