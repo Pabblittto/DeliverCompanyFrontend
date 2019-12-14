@@ -66,14 +66,8 @@ export class ConnectionService {
     return this.http.delete<any>(finalUrl);
   }
 
-  addCertainElement<T>(url:string,PK:any,object:T):Observable<string[]>{
-    let tmp;
-    if(url.slice(-1)=='/')
-      tmp=url+PK;
-    else
-      tmp=url+`/${PK}`;
-    
-      let finalUrl=`${Settings.BaseServerUrl}/${tmp}`; 
+  addCertainElement<T>(url:string,object:T):Observable<string[]>{    
+    let finalUrl=`${Settings.BaseServerUrl}/${url}`; 
 
     return this.http.post<string[]>(finalUrl,object);
   }

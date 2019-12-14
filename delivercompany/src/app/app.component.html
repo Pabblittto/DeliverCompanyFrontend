@@ -1,13 +1,17 @@
 
-<div class="MenuBorder row shadow shadow-sm"> 
-  <div class="col-auto MenuBorder"><!--nazwa serwisu-->
-    <p>Deliver Company</p>
+
+  <div class="row container-fluid shadow shadow-sm"> 
+  <div class="col-2 m-0">
+      <p>Deliver Company</p>
+    </div>
+    <div class="col-2 MenuBorder">
+      <a routerLink="departments">Departments</a>
+    </div> 
   </div>
-  <div class="col-auto MenuBorder"> <!--departments-->
-    <a routerLink="departments">Departments</a>
+  <div class="container">
+  <div>
+    <router-outlet></router-outlet>
   </div>
 </div>
-<div>
-  <router-outlet></router-outlet>
-</div>
+
 

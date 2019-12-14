@@ -1,19 +1,29 @@
-<div class="row w-100">
 
-</div>
-<div class="w-100"><!-- container for list elements -->
 
-    <app-list-element *ngFor="let department of DepartmentList" 
-    [Id]="department.id" 
-    [FirstData]="department.name" 
-    [SecondData]="department.street" 
-    [ThirdData]="department.buildingNo"
-    [FourthData]="department.officeTelNo"
-    [EditUrl]="EditUrl"
-    [DetailsUrl]="DetailsUrl"
-    [DeleteUrl]="DeleteUrl"
-    ></app-list-element>
-</div>
-<div>
+    <div class="container"><!-- container for list elements -->
+    <div >
+        <app-list-guide 
+        [FirstProperty]="'Name'" 
+        [SecondProperty]="'Street'" 
+        [ThirdProperty]="'Building number'" 
+        [FourthProperty]="'Office Tel'" 
+        [AddUrl]="AddUrl"
+        [ObjectsName]="'Departments'"
 
-</div>
+        ></app-list-guide>
+    </div>
+        <app-list-element *ngFor="let department of DepartmentList" 
+        [Id]="department.id" 
+        [FirstData]="department.name" 
+        [SecondData]="department.street" 
+        [ThirdData]="department.buildingNo"
+        [FourthData]="department.officeTelNo"
+        [EditUrl]="EditUrl"
+        [DetailsUrl]="DetailsUrl"
+        [DeleteUrl]="DeleteUrl"
+        ></app-list-element>
+    </div>
+    <div>
+
+    </div>
+

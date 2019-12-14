@@ -34,6 +34,7 @@ export class ListComponent implements OnInit {
   EditUrl:string="departments/edit/";
   DetailsUrl:string="departments/details/";
   DeleteUrl:string=Settings.Departments;
+  AddUrl:string="departments/add";
   
 
   WrongParamUrl():void{
