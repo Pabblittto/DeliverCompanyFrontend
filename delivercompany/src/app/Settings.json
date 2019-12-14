@@ -1,0 +1,20 @@
+{
+    "PageElements":7,
+    "BaseServerUrl":"https://localhost:44327",
+    "Cars":"api/cars",
+    "Chambers":"api/chambers",
+    "ChamberTypes":"api/chambertypes",
+    "Contracts":"api/contracts",
+    "Departments":"api/departments",
+    "Invoices":"api/invoices",
+    "Orders":"api/orders",
+    "Packs":"api/packs",
+    "PackTypes":"api/packtypes",
+    "ParcelLocker":"api/parcellockers",
+    "Persons":"api/people",
+    "Positions":"api/positions",
+    "Regions":"api/regions",
+    "Streets":"api/streets",
+    "Warehouses":"api/warehouses",
+    "Workers":"api/workers"
+}

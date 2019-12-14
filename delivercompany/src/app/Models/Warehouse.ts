@@ -1,6 +1,6 @@
 import { Department } from './Department';
 
-export class Warehous{
+export class Warehouse{
     Id:number;
     Street:string;
     HouseNumber:number;

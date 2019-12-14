@@ -8,7 +8,13 @@ export const DepartmentsRoutes: Routes=[
         component:DetailComponent
     },
     {
-        path:'list/:page',
+        path:'list/:page',// tu kurwa dodać list/:page
+        component:ListComponent
+    },
+    {        
+        path:'',
         component:ListComponent
     }
+
+    
 ];

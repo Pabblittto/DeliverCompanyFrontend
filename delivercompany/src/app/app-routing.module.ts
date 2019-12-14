@@ -4,7 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'departments/',
+    path:'departments',
+    loadChildren:'./departments/departments.module#DepartmentsModule'
+  },
+  {
+    path:'',
     loadChildren:'./departments/departments.module#DepartmentsModule'
   }
 

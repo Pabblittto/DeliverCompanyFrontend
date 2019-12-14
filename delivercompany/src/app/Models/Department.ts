@@ -1,7 +1,7 @@
 import { Region } from './Region';
 import { Order } from './Order';
 import { Invoice } from './Invoice';
-import { Warehous } from './Warehous';
+import { Warehouse } from './Warehouse';
 import { Car } from './Car';
 
 export class Department{
@@ -15,7 +15,7 @@ export class Department{
 
     //complex types
     Cars:Car[];
-    Warehouses:Warehous[];
+    Warehouses:Warehouse[];
     Invoices:Invoice[];
     Orders:Order[];
     Regions:Region[];
