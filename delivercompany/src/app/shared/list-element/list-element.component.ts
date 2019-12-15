@@ -26,7 +26,7 @@ export class ListElementComponent implements OnInit {
   
 
   editBtnClick(){
-
+    window.location.href=this.EditUrl+this.Id;
   }
 
   detailsBtnClick(){

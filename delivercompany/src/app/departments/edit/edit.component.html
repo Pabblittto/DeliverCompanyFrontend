@@ -1,1 +1,35 @@
-<p>edit works!</p>
+<div class="shadow shadow-sm mt-2">
+    <div class="m-1 row">
+        <button class="btn btn-dark" (click)="BackBtnClick()">Back</button>
+        <h4 class="m-1">Editing Department</h4>
+    </div>
+    <div class="mt-3 h-100" >
+        <form>
+            <div class="form-group m-1 row">
+                <label class="col-auto">Department name:</label>
+                <input [(ngModel)]="EditDepartment.name" name="name" class="form-control col" type="text">     
+            </div>
+            <div class="form-group m-1 row">
+                <label class="col-auto">Bank account number:</label>
+                <input [(ngModel)]="EditDepartment.bankAccountNo" name="bankAccountNo" class="form-control col" type="tel">     
+            </div>
+            <div class="form-group m-1 row">
+                <label class="col-auto">Street:</label>
+                <input [(ngModel)]="EditDepartment.street" name="street" class="form-control col-3">  
+                <label class="col-auto">Building number:</label>   
+                <input [(ngModel)]="EditDepartment.buildingNo" name="buildingNo" class=" form-control col-1" type="number">
+            </div>
+            <div class="form-group m-1 row">
+                <label class="col-auto">Office tel. number:</label>
+                <input [(ngModel)]="EditDepartment.officeTelNo" name="officetelNo" class="form-control col" type="tel">     
+            </div>
+            <div class="form-group m-1 row">
+                <label class="col-auto">Manager tel. number:</label>
+                <input [(ngModel)]="EditDepartment.managerTelNo" name="managerTelNo" class="form-control col" type="tel">     
+            </div>
+            <div class="text-center">
+                 <button class="btn btn-dark" (click)="EditBtnClick()">Edit Department</button>
+            </div>
+        </form>
+    </div>
+</div>
