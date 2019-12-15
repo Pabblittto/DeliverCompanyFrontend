@@ -1,6 +1,6 @@
 {
     "PageElements":1000,
-    "BaseServerUrl":"https://localhost:44327",
+    "BaseServerUrl":"https://delivercompany.azurewebsites.net",
     "Cars":"api/cars",
     "Chambers":"api/chambers",
     "ChamberTypes":"api/chambertypes",
